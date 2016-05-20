@@ -21,6 +21,9 @@ int: start-services
 api:
 	${MOCHA} -r test/api/setup.js ${API_TEST_FILES} ${ARGS}
 
+browser:
+	karma start
+
 e2e:
 	protractor test/e2e/conf.js
 

@@ -30,7 +30,7 @@ module.exports = function(config, log) {
     ioc.singleton('_', _)
     ioc.singleton('riddler', riddler)
     ioc.register('client', require('./lib'))
-    
+
     return ioc
   }
 }
@@ -39,5 +39,7 @@ function muzzledlog() {}
 muzzledlog.method = muzzledlog.module = muzzledlog.goal = function() {
   return muzzledlog
 }
+muzzledlog.result = function(r) {return r}
+muzzledlog.fail = function(err) {throw err}
 muzzledlog.info = muzzledlog.debug = muzzledlog.log = muzzledlog
 muzzledlog.error = muzzledlog.warn = muzzledlog.fatal = console.error.bind(console, '[ISSUE]')
