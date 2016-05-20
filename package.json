@@ -1,0 +1,49 @@
+{
+  "name": "clientbase",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make all",
+    "coverage": "make coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "copyright",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "5.2.0",
+    "chai-subset": "^1.2.1",
+    "coveralls": "2.11.6",
+    "dotenv": "^2.0.0",
+    "gulp": "3.9.1",
+    "gulp-bump": "1.0.0",
+    "gulp-filter": "3.0.1",
+    "gulp-git": "1.7.0",
+    "gulp-tag-version": "1.3.0",
+    "ink-docstrap": "1.1.4",
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5",
+    "mocha-lcov-reporter": "1.2.0",
+    "sinon": "1.17.3",
+    "sinon-as-promised": "4.0.0",
+    "sinon-chai": "2.8.0",
+    "win-with-logs": "^2.0.47",
+    "dotenv": "2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.9.1",
+    "bluebird": "3.3.3",
+    "lodash": "4.5.1",
+    "riddler": "^1.0.5",
+    "robust-ioc": "^1.0.1"
+  }
+}
