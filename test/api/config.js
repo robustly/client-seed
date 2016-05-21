@@ -10,6 +10,6 @@ module.exports = function(params) {
       env: params.env || 'test',
       debug: true
     },
-    API_BASE: 'http://localhost:5000/api/'
+    API_BASE: 'http://localhost:9000/api/'
   }
 }

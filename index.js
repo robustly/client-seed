@@ -30,5 +30,12 @@ module.exports = function(config, log) {
       .catch(log.fail)
   }
 
+  m.getReport = function(reportName, filter, opts) {
+    log = _log.method('getReport', {reportName: reportName, filter: filter, opts: opts})
+    return client.getReport(reportName,filter, opts)
+      .then(log.result)
+      .catch(log.fail)
+  }
+
   return m
 }

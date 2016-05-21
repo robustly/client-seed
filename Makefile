@@ -22,6 +22,7 @@ api:
 	${MOCHA} -r test/api/setup.js ${API_TEST_FILES} ${ARGS}
 
 browser:
+	make dist
 	karma start
 
 e2e:
